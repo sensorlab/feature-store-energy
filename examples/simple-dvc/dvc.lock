@@ -1,0 +1,557 @@
+schema: '2.0'
+stages:
+  prepare-residential@15:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_15.csv
+      --output ./residential-15.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_15.csv
+      md5: 2572f06ce66f91804daedc2b6b41d851
+      size: 396734
+    outs:
+    - path: ./residential-15.parquet
+      md5: 83714dcbe57a7b81dbc5260c3020adfa
+      size: 215841
+  prepare-residential@2:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_2.csv
+      --output ./residential-2.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_2.csv
+      md5: d307473c817d983cade55d7814a6c2c9
+      size: 573893
+    outs:
+    - path: ./residential-2.parquet
+      md5: 0f4e7c6856e0a0fcf2881d83bb981f12
+      size: 302378
+  prepare-residential@1:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_1.csv
+      --output ./residential-1.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_1.csv
+      md5: bd1005a160f3e60414e334360d408447
+      size: 584643
+    outs:
+    - path: ./residential-1.parquet
+      md5: 33de32c25c926bc0554884a0ffb2d34b
+      size: 314017
+  prepare-residential@10:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_10.csv
+      --output ./residential-10.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_10.csv
+      md5: d090bc7ea6160a7576715e7dee9261f6
+      size: 496941
+    outs:
+    - path: ./residential-10.parquet
+      md5: cab10e3224d81c2b6565f6e2c0558cdb
+      size: 263746
+  prepare-residential@22:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_22.csv
+      --output ./residential-22.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_22.csv
+      md5: 29118693a43c914574875b4680037c20
+      size: 322141
+    outs:
+    - path: ./residential-22.parquet
+      md5: baddafa9e080d6c426b91df93cd15ce2
+      size: 170324
+  prepare-residential@4:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_4.csv
+      --output ./residential-4.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_4.csv
+      md5: 9bcc2cd340ebb4c3db48a0019804965e
+      size: 499301
+    outs:
+    - path: ./residential-4.parquet
+      md5: e71629e8ec6f7da20b2823fcf2a90e79
+      size: 263936
+  prepare-residential@17:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_17.csv
+      --output ./residential-17.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_17.csv
+      md5: 4c47f981943a77fc2a992a050faa647e
+      size: 151737
+    outs:
+    - path: ./residential-17.parquet
+      md5: 66caced47bd02757921e62d59b4507da
+      size: 79277
+  prepare-residential@12:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_12.csv
+      --output ./residential-12.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_12.csv
+      md5: e5a837befa74508d9eb38262f4a0921e
+      size: 496302
+    outs:
+    - path: ./residential-12.parquet
+      md5: 54e7f5ecacb8e6b777e81c479b8d04f9
+      size: 263163
+  prepare-residential@5:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_5.csv
+      --output ./residential-5.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_5.csv
+      md5: f967ebc302d039095b5ef27d5e74dbe5
+      size: 496347
+    outs:
+    - path: ./residential-5.parquet
+      md5: 546010933b3d347bc6a587034d88ac87
+      size: 264127
+  prepare-residential@25:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_25.csv
+      --output ./residential-25.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_25.csv
+      md5: 32cace652f6dab882e714252741377f8
+      size: 499141
+    outs:
+    - path: ./residential-25.parquet
+      md5: 586445ec854b11f718ac04a91524ba06
+      size: 263883
+  prepare-residential@3:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_3.csv
+      --output ./residential-3.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_3.csv
+      md5: 05ee3f52ba029f673d6ca4cc0a590c16
+      size: 499805
+    outs:
+    - path: ./residential-3.parquet
+      md5: 1279627ab678e3a1ca67d159226212a2
+      size: 264322
+  prepare-residential-metadata:
+    cmd: python ./cleaning/metadata.py --output ./metadata.parquet
+  prepare-residential@16:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_16.csv
+      --output ./residential-16.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_16.csv
+      md5: bec8bea55eeabbdd55a6865b784fcc68
+      size: 211177
+    outs:
+    - path: ./residential-16.parquet
+      md5: 4041a7e851b2d9732a85208b7cc8b475
+      size: 113684
+  prepare-residential@13:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_13.csv
+      --output ./residential-13.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_13.csv
+      md5: 53b9bd9d723159d94d6fb7deb1017849
+      size: 496592
+    outs:
+    - path: ./residential-13.parquet
+      md5: b8a4bf9b12628ca192303d773845d30e
+      size: 264177
+  prepare-residential@21:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_21.csv
+      --output ./residential-21.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_21.csv
+      md5: 2e047691939050a57cfe913e934d1820
+      size: 97483
+    outs:
+    - path: ./residential-21.parquet
+      md5: b70002be70f1cce2c527273dd996449d
+      size: 52351
+  prepare-residential@7:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_7.csv
+      --output ./residential-7.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_7.csv
+      md5: da38f9198a4cbfeaf0881eba662d3ae0
+      size: 442420
+    outs:
+    - path: ./residential-7.parquet
+      md5: 97a0d5f61971a847a905350e974c99b1
+      size: 235515
+  prepare-residential@14:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_14.csv
+      --output ./residential-14.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_14.csv
+      md5: f0c1bcd08887caec8dc5295283854abd
+      size: 496097
+    outs:
+    - path: ./residential-14.parquet
+      md5: 22b559f913ff184cf4d287084a8ef163
+      size: 267690
+  prepare-residential@26:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_26.csv
+      --output ./residential-26.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_26.csv
+      md5: ba9827c399d5fbd8d81425f5483b3cf1
+      size: 79298
+    outs:
+    - path: ./residential-26.parquet
+      md5: 3dec85648389ab930b32e870381e6ed2
+      size: 42708
+  prepare-residential@6:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_6.csv
+      --output ./residential-6.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_6.csv
+      md5: 5c7e58745e57b7016afc999b38371aae
+      size: 499469
+    outs:
+    - path: ./residential-6.parquet
+      md5: cf104d3585c914f3868b9a02c999c763
+      size: 257880
+  prepare-residential@8:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_8.csv
+      --output ./residential-8.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_8.csv
+      md5: a95c317f37bb7fae37cfb924f8796aa2
+      size: 498461
+    outs:
+    - path: ./residential-8.parquet
+      md5: 28f1ad83c0d66684ce4ba70cb068d8c0
+      size: 263524
+  prepare-residential@9:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_9.csv
+      --output ./residential-9.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_9.csv
+      md5: 5a2005d1c67b050fd758bf78aa3e29fc
+      size: 468372
+    outs:
+    - path: ./residential-9.parquet
+      md5: ca511ebca5e03db1e6382fd365ae574b
+      size: 247259
+  prepare-residential@11:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_11.csv
+      --output ./residential-11.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_11.csv
+      md5: 02334c00ba65317979c062ed41bf937f
+      size: 498697
+    outs:
+    - path: ./residential-11.parquet
+      md5: a4497a8f2037a860926dd5fe0aadeb65
+      size: 263350
+  prepare-residential@18:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_18.csv
+      --output ./residential-18.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_18.csv
+      md5: 75a795da2f927f605a142fdbff1d6e26
+      size: 498352
+    outs:
+    - path: ./residential-18.parquet
+      md5: dfd8391b536c2661d8beca7c4cf2fcdc
+      size: 268696
+  prepare-residential@19:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_19.csv
+      --output ./residential-19.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_19.csv
+      md5: e1bef44e96fc27bb7b770c33013d4aa0
+      size: 495894
+    outs:
+    - path: ./residential-19.parquet
+      md5: 2440971f548d5596ef7f26ea881f1e59
+      size: 263930
+  prepare-residential@20:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_20.csv
+      --output ./residential-20.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_20.csv
+      md5: 365c37d2897e387182ad3bc3e9e06ccb
+      size: 441293
+    outs:
+    - path: ./residential-20.parquet
+      md5: 76a23c1c8a297e89500c18afa0f3b14c
+      size: 235269
+  prepare-residential@23:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_23.csv
+      --output ./residential-23.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_23.csv
+      md5: c9b7b5fc51f243e5f4cc28fcbe0b16d8
+      size: 435233
+    outs:
+    - path: ./residential-23.parquet
+      md5: 7c1556d164d70255eec5a1edee655205
+      size: 235672
+  prepare-residential@24:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_24.csv
+      --output ./residential-24.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_24.csv
+      md5: 4950795751d60e7a0da3c08a46ec0205
+      size: 499557
+    outs:
+    - path: ./residential-24.parquet
+      md5: bf7670c6958fe8bbc0030e72e83d1029
+      size: 263970
+  prepare-residential@27:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_27.csv
+      --output ./residential-27.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_27.csv
+      md5: 98853f37abd40219a28d2a1fb3e04b25
+      size: 201442
+    outs:
+    - path: ./residential-27.parquet
+      md5: 728e7fe32f86f1670db6c7e2c5a20ff2
+      size: 109739
+  prepare-residential@28:
+    cmd: python ./cleaning/residential.py --input ../datasets/REACH/Residential_28.csv
+      --output ./residential-28.parquet
+    deps:
+    - path: ../datasets/REACH/Residential_28.csv
+      md5: 19930381826b4e3a29a6f723d2a70a51
+      size: 299925
+    outs:
+    - path: ./residential-28.parquet
+      md5: 6e572852c44a66d338bbdae77d53d4e4
+      size: 161324
+  prepare-weather@YVR:
+    cmd: python ./cleaning/weather.py --input ../../datasets/REACH/Weather_YVR.csv
+      --output weather-YVR.parquet
+    deps:
+    - path: ../../datasets/REACH/Weather_YVR.csv
+      md5: 9c1afab004baaba161613e502fd54c63
+      size: 2490817
+    outs:
+    - path: weather-YVR.parquet
+      md5: ff365f295afea38628c366abc46b0cc5
+      size: 930576
+  prepare-weather@WYJ:
+    cmd: python ./cleaning/weather.py --input ../../datasets/REACH/Weather_WYJ.csv
+      --output weather-WYJ.parquet
+    deps:
+    - path: ../../datasets/REACH/Weather_WYJ.csv
+      md5: f5b2353fcd90352ad37d1705d541473d
+      size: 1287007
+    outs:
+    - path: weather-WYJ.parquet
+      md5: e7fd9364104520cf0205b6fe058d69d5
+      size: 537228
+  merge-residential-data:
+    cmd: bash -c "python ./cleaning/merge.py --input residential-{1..28}.parquet --output
+      residentials.parquet"
+    deps:
+    - path: residential-1.parquet
+      md5: 33de32c25c926bc0554884a0ffb2d34b
+      size: 314017
+    - path: residential-10.parquet
+      md5: cab10e3224d81c2b6565f6e2c0558cdb
+      size: 263746
+    - path: residential-11.parquet
+      md5: a4497a8f2037a860926dd5fe0aadeb65
+      size: 263350
+    - path: residential-12.parquet
+      md5: 54e7f5ecacb8e6b777e81c479b8d04f9
+      size: 263163
+    - path: residential-13.parquet
+      md5: b8a4bf9b12628ca192303d773845d30e
+      size: 264177
+    - path: residential-14.parquet
+      md5: 22b559f913ff184cf4d287084a8ef163
+      size: 267690
+    - path: residential-15.parquet
+      md5: 83714dcbe57a7b81dbc5260c3020adfa
+      size: 215841
+    - path: residential-16.parquet
+      md5: 4041a7e851b2d9732a85208b7cc8b475
+      size: 113684
+    - path: residential-17.parquet
+      md5: 66caced47bd02757921e62d59b4507da
+      size: 79277
+    - path: residential-18.parquet
+      md5: dfd8391b536c2661d8beca7c4cf2fcdc
+      size: 268696
+    - path: residential-19.parquet
+      md5: 2440971f548d5596ef7f26ea881f1e59
+      size: 263930
+    - path: residential-2.parquet
+      md5: 0f4e7c6856e0a0fcf2881d83bb981f12
+      size: 302378
+    - path: residential-20.parquet
+      md5: 76a23c1c8a297e89500c18afa0f3b14c
+      size: 235269
+    - path: residential-21.parquet
+      md5: b70002be70f1cce2c527273dd996449d
+      size: 52351
+    - path: residential-22.parquet
+      md5: baddafa9e080d6c426b91df93cd15ce2
+      size: 170324
+    - path: residential-23.parquet
+      md5: 7c1556d164d70255eec5a1edee655205
+      size: 235672
+    - path: residential-24.parquet
+      md5: bf7670c6958fe8bbc0030e72e83d1029
+      size: 263970
+    - path: residential-25.parquet
+      md5: 586445ec854b11f718ac04a91524ba06
+      size: 263883
+    - path: residential-26.parquet
+      md5: 3dec85648389ab930b32e870381e6ed2
+      size: 42708
+    - path: residential-27.parquet
+      md5: 728e7fe32f86f1670db6c7e2c5a20ff2
+      size: 109739
+    - path: residential-28.parquet
+      md5: 6e572852c44a66d338bbdae77d53d4e4
+      size: 161324
+    - path: residential-3.parquet
+      md5: 1279627ab678e3a1ca67d159226212a2
+      size: 264322
+    - path: residential-4.parquet
+      md5: e71629e8ec6f7da20b2823fcf2a90e79
+      size: 263936
+    - path: residential-5.parquet
+      md5: 546010933b3d347bc6a587034d88ac87
+      size: 264127
+    - path: residential-6.parquet
+      md5: cf104d3585c914f3868b9a02c999c763
+      size: 257880
+    - path: residential-7.parquet
+      md5: 97a0d5f61971a847a905350e974c99b1
+      size: 235515
+    - path: residential-8.parquet
+      md5: 28f1ad83c0d66684ce4ba70cb068d8c0
+      size: 263524
+    - path: residential-9.parquet
+      md5: ca511ebca5e03db1e6382fd365ae574b
+      size: 247259
+    outs:
+    - path: residentials.parquet
+      md5: e9725b18e21c20de9f164a2eba07222b
+      size: 4854022
+  prepare-residentials:
+    cmd: python ./preparation/residential.py -i ../../datasets/REACH/Residential_*.csv
+      -o ./residentials.parquet
+    deps:
+    - path: ../../datasets/REACH/Residential_1.csv
+      md5: bd1005a160f3e60414e334360d408447
+      size: 584643
+    - path: ../../datasets/REACH/Residential_10.csv
+      md5: d090bc7ea6160a7576715e7dee9261f6
+      size: 496941
+    - path: ../../datasets/REACH/Residential_11.csv
+      md5: 02334c00ba65317979c062ed41bf937f
+      size: 498697
+    - path: ../../datasets/REACH/Residential_12.csv
+      md5: e5a837befa74508d9eb38262f4a0921e
+      size: 496302
+    - path: ../../datasets/REACH/Residential_13.csv
+      md5: 53b9bd9d723159d94d6fb7deb1017849
+      size: 496592
+    - path: ../../datasets/REACH/Residential_14.csv
+      md5: f0c1bcd08887caec8dc5295283854abd
+      size: 496097
+    - path: ../../datasets/REACH/Residential_15.csv
+      md5: 2572f06ce66f91804daedc2b6b41d851
+      size: 396734
+    - path: ../../datasets/REACH/Residential_16.csv
+      md5: bec8bea55eeabbdd55a6865b784fcc68
+      size: 211177
+    - path: ../../datasets/REACH/Residential_17.csv
+      md5: 4c47f981943a77fc2a992a050faa647e
+      size: 151737
+    - path: ../../datasets/REACH/Residential_18.csv
+      md5: 75a795da2f927f605a142fdbff1d6e26
+      size: 498352
+    - path: ../../datasets/REACH/Residential_19.csv
+      md5: e1bef44e96fc27bb7b770c33013d4aa0
+      size: 495894
+    - path: ../../datasets/REACH/Residential_2.csv
+      md5: d307473c817d983cade55d7814a6c2c9
+      size: 573893
+    - path: ../../datasets/REACH/Residential_20.csv
+      md5: 365c37d2897e387182ad3bc3e9e06ccb
+      size: 441293
+    - path: ../../datasets/REACH/Residential_21.csv
+      md5: 2e047691939050a57cfe913e934d1820
+      size: 97483
+    - path: ../../datasets/REACH/Residential_22.csv
+      md5: 29118693a43c914574875b4680037c20
+      size: 322141
+    - path: ../../datasets/REACH/Residential_23.csv
+      md5: c9b7b5fc51f243e5f4cc28fcbe0b16d8
+      size: 435233
+    - path: ../../datasets/REACH/Residential_24.csv
+      md5: 4950795751d60e7a0da3c08a46ec0205
+      size: 499557
+    - path: ../../datasets/REACH/Residential_25.csv
+      md5: 32cace652f6dab882e714252741377f8
+      size: 499141
+    - path: ../../datasets/REACH/Residential_26.csv
+      md5: ba9827c399d5fbd8d81425f5483b3cf1
+      size: 79298
+    - path: ../../datasets/REACH/Residential_27.csv
+      md5: 98853f37abd40219a28d2a1fb3e04b25
+      size: 201442
+    - path: ../../datasets/REACH/Residential_28.csv
+      md5: 19930381826b4e3a29a6f723d2a70a51
+      size: 299925
+    - path: ../../datasets/REACH/Residential_3.csv
+      md5: 05ee3f52ba029f673d6ca4cc0a590c16
+      size: 499805
+    - path: ../../datasets/REACH/Residential_4.csv
+      md5: 9bcc2cd340ebb4c3db48a0019804965e
+      size: 499301
+    - path: ../../datasets/REACH/Residential_5.csv
+      md5: f967ebc302d039095b5ef27d5e74dbe5
+      size: 496347
+    - path: ../../datasets/REACH/Residential_6.csv
+      md5: 5c7e58745e57b7016afc999b38371aae
+      size: 499469
+    - path: ../../datasets/REACH/Residential_7.csv
+      md5: da38f9198a4cbfeaf0881eba662d3ae0
+      size: 442420
+    - path: ../../datasets/REACH/Residential_8.csv
+      md5: a95c317f37bb7fae37cfb924f8796aa2
+      size: 498461
+    - path: ../../datasets/REACH/Residential_9.csv
+      md5: 5a2005d1c67b050fd758bf78aa3e29fc
+      size: 468372
+    outs:
+    - path: ./residentials.parquet
+      md5: a741250fa7f0f69c2612e80cc8dc8358
+      size: 2701092
+  prepare-residentials-metadata:
+    cmd: python ./preparation/residential_metadata.py -o ./residentials-metadata.parquet
+    outs:
+    - path: ./residentials-metadata.parquet
+      md5: 43e16709fc7670b8b0cf75bd2c063a1c
+      size: 17376
+  enrich-features:
+    cmd: python enrich.py -o ./features.parquet
+    deps:
+    - path: ./residentials-metadata.parquet
+      md5: 2184ba05bde1c35954452ee003c9db3f
+      size: 14852
+    - path: ./residentials.parquet
+      md5: 6a9dd9402c3372c1199bdf4fefc4a4b3
+      size: 4854185
+    - path: ./weather-WYJ.parquet
+      md5: e7fd9364104520cf0205b6fe058d69d5
+      size: 537228
+    - path: ./weather-YVR.parquet
+      md5: ff365f295afea38628c366abc46b0cc5
+      size: 930576
+    outs:
+    - path: ./features.parquet
+      md5: 91ff2c9c3bdaac4eddc0b7e977a65ec1
+      size: 23686239
+  prepare-weather:
+    cmd: python ./preparation/weather.py -i ../../datasets/REACH/Weather_*.csv -o
+      ./weather.parquet
+    deps:
+    - path: ../../datasets/REACH/Weather_WYJ.csv
+      md5: f5b2353fcd90352ad37d1705d541473d
+      size: 1287007
+    - path: ../../datasets/REACH/Weather_YVR.csv
+      md5: 9c1afab004baaba161613e502fd54c63
+      size: 2490817
+    outs:
+    - path: ./weather.parquet
+      md5: e340d354a7fc409d2f9db9a5119b484d
+      size: 1166676
