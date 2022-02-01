@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-SRC_DATA_PATH = PROJECT_ROOT / 'examples' / 'barebone-dvc'
+SRC_DATA_PATH = PROJECT_ROOT / 'examples' / 'simple-dvc'
 
 
 residential_id = Entity(name='residential_id', value_type=ValueType.INT64, description='residential id')

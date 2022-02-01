@@ -8,7 +8,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-feast_repo_path = PROJECT_ROOT / 'examples' / 'barebone-feast' / 'feature_repo' / ''
+feast_repo_path = PROJECT_ROOT / 'examples' / 'simple-feast' / 'feature_repo' / ''
 feast_repo_path.exists()
 
 

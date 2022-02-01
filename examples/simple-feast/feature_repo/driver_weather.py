@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-SRC_DATA_PATH = PROJECT_ROOT / 'examples' / 'barebone-dvc'
+SRC_DATA_PATH = PROJECT_ROOT / 'examples' / 'simple-dvc'
 
 region_id = Entity(name='region', value_type=ValueType.STRING, description='region name')
 
