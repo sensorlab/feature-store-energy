@@ -1,8 +1,10 @@
 # Data and Model Design for Household Load Forecasting & Feature Store for Energy
 
-**TLDR:** This repository contains two projects that undertake a comprehensive examination and quantitative analysis of datasets related to energy consumption, focusing specifically on the elucidation of significant features:
+## TLDR;
 
-1. We significantly preprocess data and perform a feature importance analysis of features from four different datasets related to household energy consumption using SHAP analysis.
+This repository contains two projects that undertake a comprehensive examination and quantitative analysis of datasets related to energy consumption, focusing specifically on the elucidation of significant features:
+
+1. We thoroughly preprocess data and perform a feature importance analysis of features from four different datasets related to household energy consumption using SHAP analysis.
 
 2. Furthermore, this repository includes examples of several feature store solutions optimized for time-series data, serving as the centralized mechanism for data management within Artificial Intelligence (AI) pipelines.
 
@@ -13,8 +15,6 @@
 
 ## What is a feature?
 
-Features fuel AI systems as we train machine learning models to make predictions for feature values that we have never seen before.
-
 A **feature** is a measurable property of some data sample. A feature can be, for instance, an image pixel, a word from a piece of text, a person's age, a coordinate emitted from a sensor, or an aggregate value like the average number of purchases within the last hour. In addition, features can be extracted directly from files and database tables or derived values computed from one or more data sources.
 
 ## What is a feature store?
@@ -23,9 +23,17 @@ A **feature store** is a central vault for storing documented, curated, and acce
 
 ## Feature store for energy domain?
 
-With the transformation of the traditional power grid to the smart grid, the system's complexity continues to evolve and produce a large amount of data, especially with the penetration of smart meters, energy management systems, and other intelligent electronic devices, especially at the grid's low-voltage branches. Intelligent electronic devices and an energy management system enable an innovative set of energy and non-energy applications. Energy management systems enable the control of various assets in homes or buildings with limited knowledge of grid status. Example energy applications are energy cost optimization, matching consumption with self-production from renewable energy sources, by trying to help distribution system operators or aggregators to reach their predictive performance curves.
+We have identified and experimented with specialized feature store solutions for time-series data that can be used for the Energy domain to manage the extensive amount of data, primarily time series, collected in smart grids. This is designed to optimize data integration and management for advanced smart grids and energy systems.
 
-To help manage a large amount of collected data in smart grids, which are mainly time series, we have identified an application for using a feature store.
+#### Key Features:
+
+- **Unified Data Management:** Acts as a centralized repository for structured and unstructured energy-related data.
+- **Optimized Querying:** Enables quick and accurate data retrieval, aiding efficient model development for smart grids.
+- **Time-Series Specialization:** Focused on managing time-series data critical for analyzing and predicting energy consumption in smart grids.
+- **Scalable & Adaptable:** Scales efficiently with increased data loads and adapts to evolving smart grid complexities.
+
+#### Application:
+This feature store is instrumental for smart grid systems, streamlining the development of advanced models for predictive analytics and real-time decisions, thus enhancing the smart energy grid's reliability, energy efficiency, and incorporating renewable energy sources, ultimately contributing to the evolution of sustainable and intelligent energy systems.
 
 ## Citation
 If you find it useful in your research, a citation of any of the following papers would be greatly appreciated.
