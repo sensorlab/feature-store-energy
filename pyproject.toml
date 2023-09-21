@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 119
+target-version = ['py39', 'py310', 'py311']
+#include = ['\.pyi?$', '\.ipynb$']
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 119
+skip_gitignore = true
+combine_as_imports = true
+# known_first_party = ["src"]

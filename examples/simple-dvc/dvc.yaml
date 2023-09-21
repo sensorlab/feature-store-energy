@@ -5,45 +5,45 @@ stages:
       - ./residentials-metadata.parquet
 
   prepare-residentials:
-    cmd: python ./preparation/residential.py -i ../../datasets/REACH/Residential_*.csv -o ./residentials.parquet
+    cmd: python ./preparation/residential.py -i ../../data/raw/HUE/Residential_*.csv -o ./residentials.parquet
     deps:
-      - ../../datasets/REACH/Residential_1.csv
-      - ../../datasets/REACH/Residential_2.csv
-      - ../../datasets/REACH/Residential_3.csv
-      - ../../datasets/REACH/Residential_4.csv
-      - ../../datasets/REACH/Residential_5.csv
-      - ../../datasets/REACH/Residential_6.csv
-      - ../../datasets/REACH/Residential_7.csv
-      - ../../datasets/REACH/Residential_8.csv
-      - ../../datasets/REACH/Residential_9.csv
-      - ../../datasets/REACH/Residential_10.csv
-      - ../../datasets/REACH/Residential_11.csv
-      - ../../datasets/REACH/Residential_12.csv
-      - ../../datasets/REACH/Residential_13.csv
-      - ../../datasets/REACH/Residential_14.csv
-      - ../../datasets/REACH/Residential_15.csv
-      - ../../datasets/REACH/Residential_16.csv
-      - ../../datasets/REACH/Residential_17.csv
-      - ../../datasets/REACH/Residential_18.csv
-      - ../../datasets/REACH/Residential_19.csv
-      - ../../datasets/REACH/Residential_20.csv
-      - ../../datasets/REACH/Residential_21.csv
-      - ../../datasets/REACH/Residential_22.csv
-      - ../../datasets/REACH/Residential_23.csv
-      - ../../datasets/REACH/Residential_24.csv
-      - ../../datasets/REACH/Residential_25.csv
-      - ../../datasets/REACH/Residential_26.csv
-      - ../../datasets/REACH/Residential_27.csv
-      - ../../datasets/REACH/Residential_28.csv
+      - ../../data/raw/HUE/Residential_1.csv
+      - ../../data/raw/HUE/Residential_2.csv
+      - ../../data/raw/HUE/Residential_3.csv
+      - ../../data/raw/HUE/Residential_4.csv
+      - ../../data/raw/HUE/Residential_5.csv
+      - ../../data/raw/HUE/Residential_6.csv
+      - ../../data/raw/HUE/Residential_7.csv
+      - ../../data/raw/HUE/Residential_8.csv
+      - ../../data/raw/HUE/Residential_9.csv
+      - ../../data/raw/HUE/Residential_10.csv
+      - ../../data/raw/HUE/Residential_11.csv
+      - ../../data/raw/HUE/Residential_12.csv
+      - ../../data/raw/HUE/Residential_13.csv
+      - ../../data/raw/HUE/Residential_14.csv
+      - ../../data/raw/HUE/Residential_15.csv
+      - ../../data/raw/HUE/Residential_16.csv
+      - ../../data/raw/HUE/Residential_17.csv
+      - ../../data/raw/HUE/Residential_18.csv
+      - ../../data/raw/HUE/Residential_19.csv
+      - ../../data/raw/HUE/Residential_20.csv
+      - ../../data/raw/HUE/Residential_21.csv
+      - ../../data/raw/HUE/Residential_22.csv
+      - ../../data/raw/HUE/Residential_23.csv
+      - ../../data/raw/HUE/Residential_24.csv
+      - ../../data/raw/HUE/Residential_25.csv
+      - ../../data/raw/HUE/Residential_26.csv
+      - ../../data/raw/HUE/Residential_27.csv
+      - ../../data/raw/HUE/Residential_28.csv
 
     outs:
       - ./residentials.parquet
 
   prepare-weather:
-    cmd: python ./preparation/weather.py -i ../../datasets/REACH/Weather_*.csv -o ./weather.parquet
+    cmd: python ./preparation/weather.py -i ../../data/raw/HUE/Weather_*.csv -o ./weather.parquet
     deps:
-      - ../../datasets/REACH/Weather_WYJ.csv
-      - ../../datasets/REACH/Weather_YVR.csv
+      - ../../data/raw/HUE/Weather_WYJ.csv
+      - ../../data/raw/HUE/Weather_YVR.csv
     outs:
       - ./weather.parquet
 

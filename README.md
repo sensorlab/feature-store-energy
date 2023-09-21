@@ -1,6 +1,15 @@
-# Feature Store for Energy
+# Data and Model Design for Household Load Forecasting & Feature Store for Energy
 
-**TLDR;** The repository contains the source code to utilize Feast, a time-series specialized feature store, as a centralized data management for the AI pipeline. Examples show the use of a feature store in a machine-learning pipeline for short-term energy consumption prediction.
+**TLDR:** This repository contains two projects that undertake a comprehensive examination and quantitative analysis of datasets related to energy consumption, focusing specifically on the elucidation of significant features:
+
+1. We significantly preprocess data and perform a feature importance analysis of features from four different datasets related to household energy consumption using SHAP analysis.
+
+2. Furthermore, this repository includes examples of several feature store solutions optimized for time-series data, serving as the centralized mechanism for data management within Artificial Intelligence (AI) pipelines.
+
+
+## Datasets
+
+* Description of the datasets is available [here](./docs/README.md). We thoroughly examined the HUE, REFIT, and UCI-ML datasets, while the LERTA and COSSMIC examinations still need to be completed.
 
 ## What is a feature?
 

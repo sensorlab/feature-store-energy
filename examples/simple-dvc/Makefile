@@ -3,7 +3,7 @@ start:
 	python ./cleaning/metadata.py -o metadata.parquet
 
 	python ./cleaning/residential.py \
-		--input ../datasets/REACH/Residential_{1..28}.csv \
+		--input ../data/raw/HUE/Residential_{1..28}.csv \
 		--output residential-{1..28}.parquet
 
 	python ./cleaning/merge.py \
@@ -11,5 +11,5 @@ start:
 		--output residentials.parquet
 
 	python ./cleaning/weather.py \
-		--input ../datasets/REACH/Weather_WYJ.csv ../datasets/REACH/Weather_YVR.csv \
+		--input ../data/raw/HUE/Weather_WYJ.csv ../data/raw/HUE/Weather_YVR.csv \
 		--output weather-YVR.parquet

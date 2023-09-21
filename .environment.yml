@@ -1,0 +1,44 @@
+name: feature-store
+
+channels:
+  - pytorch
+  - nvidia
+  - anaconda
+  - conda-forge
+
+dependencies:
+  - python=3.8.*
+  - pip
+
+  - python-dotenv
+  - numpy<1.24.0
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - pyarrow
+  - pandas
+  - joblib
+
+  - pytorch=1.13.1
+  - pytorch-cuda=11.6
+  - pytorch-forecasting
+  - pytorch-lightning<2.0
+
+
+
+  - pip:
+    - SciencePlots
+    - holidays
+    - pysolar
+    - pylunar
+    - prophet
+    #- neuralprophet
+    - NBEATS
+    #- darts
+    - xgboost
+    - jupyterlab
+    - darts
+    
+    - black
+    - isort
+    - ruff

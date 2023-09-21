@@ -6,6 +6,21 @@ import re
 import pandas as pd
 
 
+def timeit(func):
+    from time import time
+    from functools import wraps
+
+    @wraps(func)
+    def wrap(*args, **kwargs):
+        ts = time()
+        result = func(*args, **kwargs)
+        te = time()
+        print(f'func:{func.__name__} args:[{args}, {kwargs}] took: {te-ts:2.4f} sec')
+
+        return result
+    return wrap
+
+
 def process_weather_data(dataset_path:str) -> pd.DataFrame:
     dataset_path:Path = Path(dataset_path).resolve()
     assert dataset_path.exists()
@@ -48,7 +63,8 @@ def resolve_input_path(input_path):
     return inputs
 
 
-if __name__ == '__main__':
+@timeit
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--inputs', nargs='+', required=True)
     parser.add_argument('-o', '--output', required=True)
@@ -64,3 +80,7 @@ if __name__ == '__main__':
 
     output_path = Path(args.output).resolve()
     df.to_parquet(output_path)
+
+
+if __name__ == '__main__':
+    main()
