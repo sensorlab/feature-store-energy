@@ -1,4 +1,4 @@
-name: feature-store
+name: energy-forecast
 
 channels:
   - pytorch
@@ -7,11 +7,11 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.8.*
+  - python=3.8
   - pip
 
   - python-dotenv
-  - numpy<1.24.0
+  - numpy<1.24
   - scipy
   - matplotlib
   - scikit-learn
@@ -19,7 +19,7 @@ dependencies:
   - pandas
   - joblib
 
-  - pytorch=1.13.1
+  - pytorch=1.13
   - pytorch-cuda=11.6
   - pytorch-forecasting
   - pytorch-lightning<2.0
@@ -42,3 +42,6 @@ dependencies:
     - black
     - isort
     - ruff
+
+    # Install current package
+    - -e .

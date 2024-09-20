@@ -1,3 +1,21 @@
+[project]
+name = 'energy-forecast'
+license = { file = 'LICENSE' } 
+version = '1.0.0'
+dynamic = ['readme']
+
+[tool.setuptools.dynamic]
+readme = {file = ['README.md']}
+
+[tool.setuptools.packages.find]
+include = ["src"]
+#where = ["src"]  # list of folders that contain the packages (["."] by default)
+#include = ["my_package*"]  # package names should match these glob patterns (["*"] by default)
+#exclude = ["my_package.tests*"]  # exclude packages matching these glob patterns (empty by default)
+#namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+
+
 [tool.black]
 line-length = 119
 target-version = ['py39', 'py310', 'py311']
@@ -9,4 +27,4 @@ profile = "black"
 line_length = 119
 skip_gitignore = true
 combine_as_imports = true
-# known_first_party = ["src"]
+known_first_party = ["src"]
