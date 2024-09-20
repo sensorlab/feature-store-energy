@@ -10,6 +10,7 @@ uciml.sort_index(inplace=True)
 
 
 ts_columns = [
+    "energy",
     "global_active_power",
     "global_reactive_power",
     "sub_metering_1",
@@ -22,6 +23,7 @@ ts_columns = [
 
 
 df = uciml[ts_columns].resample('1H').agg({
+    'energy': np.sum,
     'global_active_power': np.sum,
     'global_reactive_power': np.sum,
     'sub_metering_1': np.sum,
