@@ -3,6 +3,7 @@ from collections import defaultdict
 from datetime import date
 from glob import glob
 from pathlib import Path
+import numpy as np
 
 import pandas as pd
 pd.set_option("display.max_rows", None)
@@ -53,6 +54,10 @@ def transform_household_data(path=UCIML_DATASET_PATH / "household_power_consumpt
 
     # All features related to energy consumption are given Watt-hours.
     df["unmetered"] = df["global_active_power"] - df["sub_metering_1"] - df["sub_metering_2"] - df["sub_metering_3"]
+
+    # Calculate energy consumption
+    # TODO: Uncomment
+    df["energy"] = np.sqrt(df["global_active_power"]**2 + df["global_reactive_power"]**2)
 
     for key, value in extras.items():
         df[key] = value
